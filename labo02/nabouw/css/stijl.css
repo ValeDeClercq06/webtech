@@ -1,13 +1,13 @@
 /* zen.css - dezelfde HTML, een ander blad. Alleen om naar te kijken; niets hiervan is opgave. */
 
 :root {
-  --color-paper: #14110f;
-  --color-ink: #f3ede4;
-  --color-muted: #a89f93;
-  --color-accent: #e8b04b;
-  --color-zebra: #221d19;
-  --font-body: Georgia, serif;
-  --font-heading: "Trebuchet MS", Verdana, sans-serif;
+  --color-paper: #fbf7f0;
+  --color-ink: #2b2b2b;
+  --color-muted: #6b6b6b;
+  --color-accent: #b5451b;
+  --color-zebra: #f1e9dc;
+  --font-body: Georgia, sans-serif;
+  --font-heading: "Georgia", Verdana, sans-serif;
 }
  
 body {
@@ -16,28 +16,30 @@ body {
   font-family: var(--font-body);
   font-size: 1.125rem;
   line-height: 1.7;
-  text-align: center;
+  text-align: left;
 }
 
 h1, h2, h3 {
   font-family: var(--font-heading);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+  text-transform: none;
+  letter-spacing: normal;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: normal;
   color: var(--color-accent);
 }
 
 h2 {
-  font-size: 1.25rem;
-  color: var(--color-accent);
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: var(--color-ink);
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 1.25rem;
+  font-weight: normal;
   color: var(--color-muted);
 }
 
@@ -47,26 +49,23 @@ h3 {
 }
 
 nav a {
-  color: var(--color-ink);
+  color: var(--color-accent);
   text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-family: var(--font-heading);
-  font-size: 0.875rem;
+  font-weight: bold;
 }
 
 nav a:hover,
 nav a:focus {
-  color: var(--color-accent);
+  color: var(--color-ink);
 }
 
 ul, ol {
-  list-style: none;
+  list-style: revert;
 }
 
 .intro {
-  font-size: 1.5rem;
-  color: var(--color-accent);
+  font-size: 1.25rem;
+  color: var(--color-ink);
 }
 
 .kaart li:nth-child(odd) {
@@ -74,7 +73,7 @@ ul, ol {
 }
 
 .prijs {
-  color: var(--color-accent);
+  color: var(--color-muted);
 }
 
 main a {
@@ -94,6 +93,7 @@ strong {
 footer {
   color: var(--color-muted);
   font-size: 0.875rem;
+  text-align: center;
 }
 
 footer a {
