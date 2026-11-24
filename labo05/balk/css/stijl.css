@@ -1,0 +1,45 @@
+/* stijl.css - labo 5, balk (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+--papier: #f8f7f5;
+--inkt: #1a1a1a;
+--gedempt: #6b6b6b;
+--balk: #000000;
+--links: #9a9a9a;
+--actlink : #ffffff;
+--tekst: #9a9a9a;
+--footer: black;
+}
+
+/* === your rules === */
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--papier);
+    color: var(--inkt);
+    display: grid;
+}
+header{
+    background-color: var(--balk);
+    align-items: center;
+    display: flex;
+    padding-left: 0.75rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+nav{
+    padding-left: 3rem;
+}
+nav li{
+    display: inline-block;
+    gap: 1fr;
+    text-transform: uppercase;
+}
+
+.intro{
+    color: var(--gedempt);
+}
+.inhoud{
+    
+}

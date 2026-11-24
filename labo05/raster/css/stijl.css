@@ -1,0 +1,66 @@
+/* stijl.css - labo 5, raster (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+--a: #e9493f;
+--b: #edd24a;
+--c: #072f55;
+--d: #52a51a;
+--e: #efaad9;
+--f: #a5f129;
+--g: #ebc47a;
+--h: #e8882c;
+
+}
+
+/* === your rules === */
+body{
+    text-align: right;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.5rem;
+    margin-right: 0.75rem;
+}
+
+.raster{
+    display: grid;
+    height: 100vh;
+    padding: 1rem;
+    gap: 1rem;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.a{
+    background-color: var(--a);
+}
+.b{
+    background-color: var(--b);
+}
+.c{
+    background-color: var(--c);
+}
+.d{
+    background-color: var(--d);
+}
+.e{
+    background-color: var(--e);
+}
+.f{
+    background-color: var(--f);
+}
+.g{
+    background-color: var(--g);
+}
+.h{
+    background-color: var(--h);
+}
+
+.b,
+.h{
+    grid-column-start: 4;
+}
+.vlak{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
